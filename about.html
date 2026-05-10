@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/site-shell.js"></script>
+  <script>
+    SiteShell.renderHead({ title: "About Us" });
+  </script>
+</head>
+<body>
+<script>
+  SiteShell.renderNavbar("about");
+</script>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-panel">
+      <span class="page-eyebrow">About TEFA</span>
+      <h1 class="page-title">Building Future Through Construction Innovation</h1>
+      <p class="page-subtitle">
+        Teaching Factory DPIB SMK Negeri 6 Kota Bekasi berdiri sejak tahun 2025 di Kota Bekasi dan bergerak di bidang jasa perencanaan konstruksi. Fokus utama kami meliputi jasa survey atau pengukuran, jasa pemodelan bangunan, dan jasa estimasi biaya konstruksi.
+      </p>
+      <div class="page-chip-row">
+        <span class="page-chip">Student-Led Team</span>
+        <span class="page-chip">Industry Mindset</span>
+        <span class="page-chip">Creative Build Culture</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="company-story-section py-5">
+  <div class="container">
+    <div class="company-story-card">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-5">
+          <span class="section-badge">Company Profile</span>
+          <h2 class="section-title-modern mt-3">Teaching Factory DPIB SMK Negeri 6 Kota Bekasi</h2>
+        </div>
+        <div class="col-lg-7">
+          <p class="mb-3">
+            Teaching Factory DPIB SMK Negeri 6 Kota Bekasi berdiri sejak tahun 2025 di Kota Bekasi, kami bergerak di bidang usaha jasa perencanaan konstruksi dan memfokuskan bisnis pada jasa survey / pengukuran, jasa pemodelan bangunan dan jasa estimasi biaya konstruksi.
+          </p>
+          <p class="mb-0">
+            Dalam perjalanan bisnisnya, kami didukung oleh partner-partner bisnis terpercaya yang telah bekerja sama dan mendukung banyak kegiatan proyek perencanaan bangunan yang telah kami kerjakan. Pengalaman bekerja dengan instansi-instansi swasta maupun pemerintah telah membuka jaringan Teaching Factory DPIB SMK Negeri 6 Kota Bekasi menjadi semakin luas.
+          </p>
+        </div>
+      </div>
+      <div class="about-stats-grid" aria-label="TEFA highlights">
+        <div class="about-stat-card">
+          <strong>2025</strong>
+          <span>Berdiri</span>
+        </div>
+        <div class="about-stat-card">
+          <strong>3</strong>
+          <span>Layanan utama</span>
+        </div>
+        <div class="about-stat-card">
+          <strong>11</strong>
+          <span>Struktur inti</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="vision-mission py-5">
+  <div class="container">
+    <div class="about-card-modern">
+      <h2 class="mb-4 text-center">Visi & Misi</h2>
+
+      <div class="mb-4">
+        <h3 class="fw-bold">VISI</h3>
+        <p>
+          Visi TEFA DPIB SMK Negeri 6 Kota Bekasi adalah menjadi salah satu unit produksi jasa perencanaan konstruksi yang unggul dan berkualitas.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="fw-bold">MISI</h3>
+        <ol>
+          <li>Menjalin kerja sama yang baik, bersinergi, serta seluas-luasnya dengan pelanggan dan mitra usaha.</li>
+          <li>Menciptakan sistem dan standar-standar yang berkualitas dalam pelayanan serta pemenuhan kebutuhan pelanggan.</li>
+          <li>Menghadirkan jasa perencanaan yang maksimal dengan tenaga-tenaga terpilih dan handal untuk memenuhi kebutuhan serta kepuasan pelanggan.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="team-structure-section">
+  <div class="container">
+    <div class="text-center section-heading">
+      <span class="section-badge">Organization Structure</span>
+      <h2 class="section-title-modern mt-3">Struktur Tim Teaching Factory</h2>
+      <p class="section-subtitle">Card tim dibuat lebih modern dengan foto, jabatan, dan layout grid yang tetap nyaman di desktop maupun mobile.</p>
+    </div>
+
+    <div class="team-hero-card about-reveal">
+      <div class="team-hero-photo-wrap">
+        <img src="images/ibrahim.jpg" alt="Ibrahim Rimovic Albani" class="team-hero-photo" loading="lazy" decoding="async">
+      </div>
+      <div class="team-hero-content">
+        <span class="team-hero-label">President Director</span>
+        <h3>Ibrahim Rimovic Albani</h3>
+        <p>Memimpin arah Teaching Factory DPIB SMK Negeri 6 Kota Bekasi dalam pengembangan layanan, kualitas hasil kerja, dan koneksi dengan kebutuhan industri konstruksi.</p>
+      </div>
+    </div>
+
+    <div class="team-toolbar about-reveal" aria-label="Team controls">
+      <div class="team-filter-group" role="group" aria-label="Filter role">
+        <button type="button" class="team-filter-btn active" data-filter="all">All</button>
+        <button type="button" class="team-filter-btn" data-filter="director">Director</button>
+        <button type="button" class="team-filter-btn" data-filter="manager">Manager</button>
+      </div>
+      <label class="team-search-label">
+        <span class="visually-hidden">Cari anggota tim</span>
+        <input type="search" id="teamSearch" class="team-search-input" placeholder="Cari nama atau jabatan">
+      </label>
+    </div>
+
+    <div id="teamGrid" class="team-grid"></div>
+    <p id="teamEmpty" class="team-empty" hidden>Tidak ada anggota yang sesuai dengan pencarian.</p>
+  </div>
+</section>
+
+<script>
+  SiteShell.renderFooterScripts();
+</script>
+<script>
+const teamMembers = [
+  {
+    role: "HCGA Director",
+    name: "Anisa Nur Soleha",
+    image: "images/Anisa-web.jpg",
+    description: "Mengelola ritme tim, koordinasi internal, serta kebutuhan umum organisasi agar alur kerja berjalan lebih tertib dan adaptif."
+  },
+  {
+    role: "Finance Director",
+    name: "Hanifah Rifa Afrani",
+    image: "images/Hanifah-web.jpg",
+    description: "Mengatur arus keuangan, pengendalian anggaran, dan memastikan kebutuhan biaya operasional maupun proyek tetap tertata."
+  },
+  {
+    role: "Operational II Director",
+    name: "Muhammad Bintang Pratama",
+    image: "images/bintang-web.jpg",
+    description: "Mengawal operasional lapangan, koordinasi teknis, dan alur kerja project agar proses tetap tertata dan sesuai kebutuhan tim."
+  },
+  {
+    role: "Operational I Director",
+    name: "Alvaro Akmal Ridho Salvian",
+    image: "images/alvaro.png",
+    description: "Mengatur jalannya operasional harian, distribusi tugas, dan sinkronisasi timeline agar setiap pekerjaan tetap on track."
+  },
+  {
+    role: "IT Director",
+    name: "Muhammad Ayyash Arsalan",
+    image: "images/Ayyash.jpg",
+    description: "Mendukung kebutuhan digital TEFA mulai dari website, sistem informasi, hingga pengelolaan aset visual dan teknis."
+  },
+  {
+    role: "Marketing Director",
+    name: "Syafa Aulia Agustin",
+    image: "images/syafa-web.jpg",
+    description: "Membangun komunikasi brand, memperluas jangkauan promosi, dan menjaga citra TEFA tetap relevan bagi partner maupun calon klien."
+  },
+  {
+    role: "BIM Development Manager",
+    name: "Alif Putra Ramadhan",
+    image: "images/alif-web.jpg",
+    description: "Mengembangkan workflow BIM, standar pemodelan, dan peningkatan kualitas output digital untuk kebutuhan perencanaan konstruksi."
+  },
+  {
+    role: "BIM Training Manager",
+    name: "Adi Satrio",
+    image: "images/adi.png",
+    description: "Mendukung pelatihan BIM, transfer skill, dan pembiasaan standar kerja digital agar kemampuan tim terus berkembang."
+  },
+  {
+    role: "Accounting Manager",
+    name: "Bintang Aulia Nurasih",
+    image: "images/aul.png",
+    description: "Menangani pencatatan transaksi, rekap dokumen keuangan, dan menjaga laporan administratif tetap akurat dan rapi."
+  },
+  {
+    role: "Graphic & Video Editing Manager",
+    name: "Caesar Bintang Ghifari",
+    image: "images/Caesar.png",
+    description: "Mengelola kebutuhan desain grafis, editing video, dan materi visual agar komunikasi project tampil rapi dan konsisten."
+  }
+];
+
+const getInitials = (name) =>
+  name
+    .split(" ")
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0].toUpperCase())
+    .join("");
+
+const teamGrid = document.getElementById("teamGrid");
+const teamSearch = document.getElementById("teamSearch");
+const teamEmpty = document.getElementById("teamEmpty");
+const filterButtons = [...document.querySelectorAll(".team-filter-btn")];
+let activeFilter = "all";
+
+if (teamGrid) {
+  teamGrid.innerHTML = teamMembers
+    .map((member, index) => {
+      const searchText = `${member.role} ${member.name}`.toLowerCase();
+      const category = member.role.toLowerCase().includes("manager") ? "manager" : "director";
+
+      return `
+      <article class="team-card about-reveal" data-search="${searchText}" data-category="${category}" style="--reveal-delay: ${index * 45}ms">
+        <div class="team-card-photo-shell">
+          ${
+            member.image
+              ? `<img src="${member.image}" alt="${member.name}" class="team-card-photo" loading="lazy" decoding="async">`
+              : `<div class="team-card-avatar" aria-label="${member.name}">${getInitials(member.name)}</div>`
+          }
+        </div>
+        <div class="team-card-body">
+          <span class="team-card-role">${member.role}</span>
+          <h3 class="team-card-name">${member.name}</h3>
+          <p class="team-card-description">${member.description}</p>
+          <button type="button" class="team-card-toggle" aria-expanded="false">Lihat detail</button>
+        </div>
+      </article>
+    `;
+    })
+    .join("");
+
+  const cards = [...teamGrid.querySelectorAll(".team-card")];
+
+  const applyTeamFilter = () => {
+    const query = (teamSearch?.value || "").trim().toLowerCase();
+    let visibleCount = 0;
+
+    cards.forEach((card) => {
+      const matchFilter = activeFilter === "all" || card.dataset.category === activeFilter;
+      const matchQuery = !query || card.dataset.search.includes(query);
+      const isVisible = matchFilter && matchQuery;
+      card.hidden = !isVisible;
+
+      if (isVisible) {
+        visibleCount += 1;
+      }
+    });
+
+    if (teamEmpty) {
+      teamEmpty.hidden = visibleCount !== 0;
+    }
+  };
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      activeFilter = button.dataset.filter;
+      filterButtons.forEach((item) => item.classList.toggle("active", item === button));
+      applyTeamFilter();
+    });
+  });
+
+  teamSearch?.addEventListener("input", applyTeamFilter);
+
+  cards.forEach((card) => {
+    card.querySelector(".team-card-toggle")?.addEventListener("click", () => {
+      const expanded = card.classList.toggle("is-expanded");
+      card.querySelector(".team-card-toggle").setAttribute("aria-expanded", expanded);
+      card.querySelector(".team-card-toggle").textContent = expanded ? "Tutup detail" : "Lihat detail";
+    });
+  });
+}
+
+const revealItems = document.querySelectorAll(".about-reveal");
+
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.14 });
+
+  revealItems.forEach((item) => revealObserver.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add("is-visible"));
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/site-shell.js"></script>
+  <script>
+    SiteShell.renderHead({ title: "Contact Us" });
+  </script>
+  <style>
+.contact-card{
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(248,249,255,0.98) 100%);
+    padding: 34px;
+    border-radius: 28px;
+    border: 1px solid rgba(13,27,42,0.08);
+    box-shadow: 0 24px 60px rgba(13,27,42,0.08);
+    position: relative;
+}
+
+.contact-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 6px;
+    border-top-left-radius: 28px;
+    background: linear-gradient(135deg,#1d307b,#2a419c);
+}
+
+.contact-header{
+    position: relative;
+    z-index: 1;
+}
+
+.contact-card .form-control{
+    border-radius: 16px;
+    padding: 14px 18px;
+    border: 1px solid rgba(13,27,42,0.12);
+    box-shadow: inset 0 1px 2px rgba(13,27,42,0.04);
+}
+
+.contact-card .form-control:focus{
+    border-color: #1d307b;
+    box-shadow: 0 0 0 0.15rem rgba(29, 48, 123, 0.12);
+}
+
+.contact-card .form-label{
+    font-weight: 600;
+}
+
+.contact-card .btn{
+    border-radius: 14px;
+    padding: 14px;
+    font-weight: 700;
+}
+
+.map-side-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+}
+
+.map-mini-info{
+    background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(244,247,255,0.98));
+    border: 1px solid rgba(29,48,123,0.08);
+    border-radius: 24px;
+    padding: 22px 24px;
+    box-shadow: 0 20px 50px rgba(13,27,42,0.08);
+}
+
+.map-mini-info h3{
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #0d1b2a;
+    margin-bottom: 8px;
+}
+
+.map-mini-info p{
+    margin: 0;
+    color: #667085;
+    line-height: 1.7;
+}
+
+.map-card{
+    flex: 1;
+    min-height: 500px;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0 28px 70px rgba(13,27,42,0.12);
+    border: 1px solid rgba(29,48,123,0.08);
+}
+
+.map-frame{
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+}
+
+@media(max-width:991px){
+    .contact-card{
+        padding: 28px 22px;
+    }
+
+    .map-card,
+    .map-frame{
+        min-height: 380px;
+    }
+}
+
+@media(max-width:768px){
+    .contact-card{
+        padding: 24px 18px;
+        border-radius: 24px;
+    }
+
+    .map-mini-info{
+        padding: 18px;
+        border-radius: 20px;
+    }
+
+    .map-card{
+        min-height: 340px;
+        border-radius: 24px;
+    }
+
+    .map-frame{
+        min-height: 340px;
+    }
+}
+  </style>
+</head>
+<body>
+<script>
+  SiteShell.renderNavbar("contact");
+</script>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-panel">
+      <span class="page-eyebrow">Contact Us</span>
+      <h1 class="page-title">Let&apos;s Talk About Your Next Project</h1>
+      <p class="page-subtitle">Hubungi TEFA DPIB SMKN 6 Bekasi untuk kolaborasi, konsultasi, atau kebutuhan jasa perencanaan konstruksi yang lebih modern dan terarah.</p>
+      <div class="page-chip-row">
+        <span class="page-chip">Fast Response</span>
+        <span class="page-chip">Real Project Mindset</span>
+        <span class="page-chip">Open For Collaboration</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-shell">
+  <div class="container">
+    <div class="row gy-4 align-items-stretch">
+      <div class="col-lg-5">
+        <div class="contact-card">
+          <div class="contact-header mb-4">
+            <span class="section-badge">Send Message</span>
+            <h2 class="fw-bold mt-3">Let&apos;s connect with TEFA</h2>
+            <p class="text-muted">Tinggalkan pesan dan kami akan menghubungi kembali secepatnya.</p>
+          </div>
+
+          <form action="https://formsubmit.co/emailkamu@gmail.com" method="POST">
+            <div class="mb-3">
+              <label class="form-label">Nama</label>
+              <input type="text" class="form-control" name="name" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" name="email" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Pesan</label>
+              <textarea class="form-control" rows="5" name="message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 py-3">
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="map-side-wrap">
+          <div class="map-mini-info">
+            <span class="section-badge">Our Location</span>
+            <h3 class="mt-3">Visit TEFA DPIB SMKN 6 Bekasi</h3>
+            <p>Temukan lokasi kami secara langsung dan lihat pusat aktivitas Teaching Factory yang terus berkembang.</p>
+          </div>
+
+          <div class="map-card rounded-4 overflow-hidden shadow-sm">
+            <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.252197044008!2d107.03228277409644!3d-6.23044606101409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698eeb54ff59e9%3A0x2ac7e6b5da364366!2sSMK%20Negeri%206%20Kota%20Bekasi!5e0!3m2!1sid!2sid!4v1775265917548!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  SiteShell.renderFooterScripts();
+</script>
+</body>
+</html>
